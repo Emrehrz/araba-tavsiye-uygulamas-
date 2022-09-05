@@ -33,10 +33,8 @@ loadCar();
 
 function loadCar() {
     getMyArr();
-    console.log(entred)
+
 }
-
-
 
 function getMyArr() {
     entred[0] = document.getElementById("conf").innerHTML;
