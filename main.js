@@ -34,11 +34,11 @@ loadCar();
 function loadCar() {
     getMyArr();
 
-}
+};
 
 function getMyArr() {
     entred[0] = document.getElementById("conf").innerHTML;
     entred[1] = document.getElementById("pwr").innerHTML;
     entred[2]= document.getElementById("eco").innerHTML;
     entred[3]= document.getElementById("spr").innerHTML;
-}
+};
