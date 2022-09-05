@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabamı bul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="parameters">
+            <p>Arabanızda hangi özellikten ne kadar istiyorsunuz: </p>
+
+            <div class="input">
+                <label>Konfor: </label>
+                <input type="range" id="confInp" min="0" max="5" value="0" onchange="confUpdate()">
+                <span id="conf"></span>
+                <hr>
+
+
+                <label>Güç: </label>
+                <input type="range" id="pwrInp" min="0" max="5" value="0" onchange="pwrUpdate()">
+                <span id="pwr"></span>
+                <hr>
+
+
+                <label>Ekonomik: </label>
+                <input type="range" id="ecoInp" min="0" max="5" value="0"onchange="ecoUpdate()">
+                <span id="eco"></span >
+                <hr>
+                
+                <label>Yakışıklılık: </label>
+                <input type="range" id="sprInp" min="0" max="5" value="0"onchange="sprUpdate()">
+                <span id="spr"></span >
+                <hr>
+
+                <button type="button"  id="btn" onclick="loadCar()"><b>Arabamı Bul</b></button>
+            </div>
+
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
