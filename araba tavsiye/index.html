@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabamı bul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="parameters">
+            <p id="baslik" >Arabanızda hangi özellikten ne kadar istiyorsunuz: </p>
+
+            <div class="input" id="govde">
+                <label>Konfor: <b id="bosluk">ss</b></label>
+                <input type="range" id="confInp" min="0" max="5" value="0" onchange="confUpdate()">
+                <span id="conf">0</span>
+                <hr>
+
+
+                <label>Güç:<b id="bosluk">ssssd</b> </label>
+                <input type="range" id="pwrInp" min="0" max="5" value="0" onchange="pwrUpdate()">
+                <span id="pwr">0</span>
+                <hr>
+
+
+                <label>Ekonomik: </label>
+                <input type="range" id="ecoInp" min="0" max="5" value="0" onchange="ecoUpdate()">
+                <span id="eco">0</span>
+                <hr>
+
+                <label>Yakışıklılık: </label>
+                <input type="range" id="sprInp" min="0" max="5" value="0" onchange="sprUpdate()">
+                <span id="spr">0</span>
+                <br><br>
+
+                <button type="button" id="btn" onclick="loadCar()"><b>Arabamı Bul</b></button>
+            </div>
+        </form>
+
+        <form  id="Hnda">
+            <div class="output">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Honda Civic</h2>
+                <a href="https://www.honda.com.tr/otomobil/modeller/honda-civic-type-r-gt/versiyon-detay"><img src="honda-civic.jpg"></a>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+        
+        <form class="output" id="Mrc">
+            <div class="outBody">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Mercedes Benz C Class</h2>
+                <a href="https://www.mercedes-benz.com.tr/passengercars/mercedes-benz-cars/models/c-class/saloon-w206/explore/highlights.module.html"><img src="mercedes.jpg"></a>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+
+        <form class="output" id="Toyt">
+            <div class="outBody">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Toyota Corolla</h2>
+                <a href="https://www.toyota.com.tr/araba-modelleri/corolla-sedan"><img src="Corolla.jpg"></a>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+
+        <form class="output" id="Vw">
+            <div class="outBody">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Volkswagen Passat</h2>
+                <a href="https://binekarac.vw.com.tr/tr/modeller-fiyatlar/arac-modelleri/passat.html"><img src="passat.jpg"></a>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+
+        <form class="output" id="Opl">
+            <div class="outBody">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Opel Insigna</h2>
+                <a href="https://fiyatlisteleri.opel.com.tr/arac/insignia"><img src="opel.jpg"></a>
+                <p > <i>Teknik özelikler ve daha fazlası için görsele tıklayınız.</i></p>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+
+        <form class="output" id="Ford">
+            <div class="outBody">
+                <h1>Size göre olduğunu düşündüğümüz araba: </h1>
+                <h2>Ford Focus</h2>
+                <a href="https://www.ford.com.tr/otomobiller/yeni-ford-focus"><img src="Ford.jpg"></a>
+                <p ><i>Teknik özelikler ve daha fazlası için görsele tıklayınız. Sayfayı yenileyip devam edebilirsiniz.</i></p>
+            </div>
+        </form>
+        <form class="output" id="none">
+            <div class="outBody">
+                <h1>Üzgünüz, bu değerlere sahip tavsiye edebileceğimiz araba bulunmamaktadır...</h1>
+                <p style="text-align: left;" ><i>Sayfayı yenileyip devam edebilirsiniz.</i></p>
+
+            </div>
+        </form>
+
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

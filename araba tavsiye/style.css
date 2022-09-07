@@ -1,0 +1,178 @@
+.main {
+    display: flex;
+    gap: 25vh;
+    margin-top: 8vh;
+}
+
+body {
+    background-image: url(arabalar.jpg);
+    background-size: 100%;
+}
+
+.parameters p {
+    margin-top: 3vh;
+}
+
+.parameters {
+    display: grid;
+    background-color: rgba(235, 227, 223, 0.582);
+    border-radius: 7px;
+    width: 800px;
+    height: max-content;
+    font: 2em "Fira Sans", sans-serif;
+    margin-left: 4vh;
+    text-align: center;
+    color: darkslategray;
+}
+
+input[type="range"] {
+    margin-left: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 10px;
+    color: red;
+}
+
+
+.input span {
+    position: absolute;
+    margin-left: 2%;
+}
+
+
+.input button {
+    background-color: white;
+    width: 15vh;
+    height: 3vh;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.input button:hover {
+    background-color: rgba(29, 179, 66, 0.3);
+}
+
+.output {
+    width: max-content;
+    height: max-content;
+}
+
+#Hnda,
+#Mrc,
+#Toyt,
+#Vw,
+#Opl,
+#Ford,
+#none {
+    display: none;
+    text-align: left;
+    padding-left: 1vh;
+    background-color: rgba(235, 227, 223, 0.582);
+    border: none;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.output h1 {
+    display: inline-table;
+    color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+    font: 300;
+}
+
+.output p{
+    color: rgba(56, 55, 55, 0.904);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.output h2 {
+    text-align: center;
+}
+
+.output img {
+    border-radius: 15%;
+    width: 60vh;
+    justify-content: center;
+    height: 50vh;
+}
+
+.output p {
+    text-align: right;
+}
+
+#bosluk {
+    color: rgba(235, 227, 223, 0.1);
+}
+
+@media all and (max-width: 500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .parameters {
+        margin: 0 auto;
+        width: fit-content;
+
+    }
+
+    body {
+        background-size: 0;
+        background-color: rgb(231, 126, 52);
+    }
+
+    #Hnda,
+    #Mrc,
+    #Toyt,
+    #Vw,
+    #Opl,
+    #Ford,
+    #none {
+        width: fit-content;
+        margin: 0 auto;
+
+    }
+    
+    .output img {
+        border-radius: 15%;
+        width: 42vh;
+        height: 42vh;
+        margin: auto 0;
+        padding: auto 0;
+    }
+
+    .output h1,h2,p{
+        font-size: 20px;
+    }
+
+    .output h1 {
+        text-align: left;
+        color: darkslategray;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    }
+
+    .output h2 {
+        text-align: left;
+    }
+
+    .output p{
+        width: 360px;
+        text-align: left;
+    } 
+
+}
+
+@media all and (min-width: 500px) and (max-height: 1000px){
+    body {
+        background-image: url(arabalar.jpg);
+        background-repeat: no-repeat;
+        background-color: rgb(231, 126, 52);
+    }
+}
